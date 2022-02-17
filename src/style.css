@@ -151,31 +151,32 @@ body {
 .projectRight {
   color: white;
   padding-left: 20px;
-  padding-top: 10px;
 }
 
 #project-title {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 #project-description {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 #project-technologies {
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 #project-github {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 0.9rem;
   color: lightgray;
 }
 #project-site {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 0.9rem;
   color: lightgray;
 }
 

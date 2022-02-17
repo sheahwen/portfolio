@@ -17,7 +17,7 @@ const NavBar = () => {
           My Contacts
         </a>
         <a className="navItem" href="/projects">
-          Past Project
+          Past Projects
         </a>
       </div>
     </div>

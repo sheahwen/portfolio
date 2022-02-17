@@ -1,5 +1,8 @@
 import pantastic from "../images/screenshot_pantastic.PNG";
-const Project = () => {
+import airrnr from "../images/screenshot_airrnr.PNG";
+import chess from "../images/screenshot_chess.PNG";
+
+const Project = (props) => {
   return (
     <div className="projectCard">
       <div className="browser">
@@ -10,15 +13,40 @@ const Project = () => {
           </div>
         </div>
         <div id="line-two">
-          <img src={pantastic}></img>
+          {props.image === "2" ? (
+            <img src={pantastic} />
+          ) : props.image === "1" ? (
+            <img src={airrnr} />
+          ) : (
+            <img src={chess} />
+          )}
         </div>
       </div>
       <div className="projectRight">
-        <div id="project-title">Pantastic Recipe App</div>
-        <div id="project-description">Add a short description</div>
-        <div id="project-technologies">Technologies: </div>
-        <div id="project-github">Github: </div>
-        <div id="project-site">Site: </div>
+        <div id="project-title">{props.title}</div>
+        <div id="project-description">{props.description}</div>
+        <div id="project-technologies">Technologies: {props.technologies}</div>
+        <div id="project-github">
+          Github:
+          <a href={props.github} style={{ color: "#f5f5f5" }}>
+            {props.github}
+          </a>
+        </div>
+        {props.site ? (
+          <div id="project-site">
+            Site:
+            <a href={props.site} style={{ color: "#f5f5f5" }}>
+              {props.site}
+            </a>
+          </div>
+        ) : (
+          <div id="project-github">
+            Github:
+            <a href={props.github2} style={{ color: "#f5f5f5" }}>
+              {props.github2}
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
