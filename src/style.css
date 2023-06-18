@@ -200,15 +200,24 @@ body {
   font-family: "Merriweather", serif;
   margin-top: 0;
 }
-#aboutTwo {
+
+#aboutName span {
+  opacity: 0;
+}
+
+#aboutThree {
+  color: white;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+#jiji {
   color: white;
   margin-top: 0;
   font-size: 1.2rem;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
 }
-#aboutThree {
-  color: white;
-  font-size: 1.2rem;
-  text-align: justify;
+
+#jiji span:hover {
+  color: red;
 }
