@@ -7,7 +7,6 @@ import App from "./App";
 import MyContacts from "./components/MyContacts";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
-import Jiji from "./components/Jiji";
 
 const customHistory = createBrowserHistory({
   // basename: config.urlBasename || ""
@@ -32,9 +31,6 @@ ReactDOM.render(
       </Route>
       <Route exact path="/projects">
         <Projects />
-      </Route>
-      <Route exact path="/jiji">
-        <Jiji />
       </Route>
     </Switch>
   </Router>,
