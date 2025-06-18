@@ -21,7 +21,31 @@ const timelineData = [
   {
     year: "2022",
     title: "🧑‍💻 My first job as a software engineer",
-    text: "Working as a software engineer at Alta Exchange marked the beginning of an exciting journey. We started with just flowcharts and diagrams - a project that hadn't yet left the whiteboard - and together as a team, we built it from the ground up. We brainstormed, shipped features, and debugged real-time issues to bring a trading platform to life, one that users came to rely on. Throughout this journey, I often felt like I was living out the anime Solo Leveling—constantly growing, taking on tougher challenges, and leveling up alongside a fast-moving team.",
+    text: (
+      <span>
+        Working as a software engineer at{" "}
+        <a
+          href="https://alta.exchange/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "#8f5cff",
+            fontWeight: 600,
+            textDecoration: "underline",
+          }}
+        >
+          Alta Exchange
+        </a>{" "}
+        marked the beginning of an exciting journey. We started with just
+        flowcharts and diagrams - a project that hadn't yet left the whiteboard
+        - and together as a team, we built it from the ground up. We
+        brainstormed, shipped features, and debugged real-time issues to bring a
+        trading platform to life, one that users came to rely on. Throughout
+        this journey, I often felt like I was living out the anime Solo
+        Leveling—constantly growing, taking on tougher challenges, and leveling
+        up alongside a fast-moving team.
+      </span>
+    ),
     skills: [
       "React",
       "Next.js",
