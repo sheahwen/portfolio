@@ -22,6 +22,19 @@ const timelineData = [
     year: "2022",
     title: "🧑‍💻 My first job as a software engineer",
     text: "Working as a software engineer at Alta Exchange marked the beginning of an exciting journey. We started with just flowcharts and diagrams - a project that hadn't yet left the whiteboard - and together as a team, we built it from the ground up. We brainstormed, shipped features, and debugged real-time issues to bring a trading platform to life, one that users came to rely on. Throughout this journey, I often felt like I was living out the anime Solo Leveling—constantly growing, taking on tougher challenges, and leveling up alongside a fast-moving team.",
+    skills: [
+      "React",
+      "Next.js",
+      "React Native",
+      "Tailwind CSS",
+      "Typescript",
+      "Nest.js",
+      "mySQL",
+      "Docker",
+      "Terraform",
+      "AWS",
+      "Google Cloud",
+    ],
   },
   {
     year: "2025",
@@ -106,6 +119,11 @@ const AboutMe = () => {
                     >
                       Download Resume
                     </a>
+                  )}
+                  {item.skills && (
+                    <div className="timeline-skills">
+                      <strong>Skills:</strong> {item.skills.join(", ")}
+                    </div>
                   )}
                 </div>
               </motion.div>

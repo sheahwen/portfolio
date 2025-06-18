@@ -253,13 +253,19 @@ body {
   font-weight: 700;
   color: white;
   margin-bottom: 1.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 
 .timeline-description {
   color: #c5d1d6;
   font-size: 1.05rem;
   line-height: 1.6;
+}
+
+.timeline-skills {
+  color: #aeb5b9;
+  font-size: 0.8rem;
+  margin-top: 16px;
 }
 
 .about-intro {
