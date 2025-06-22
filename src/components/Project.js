@@ -2,6 +2,8 @@ import pantastic from "../images/screenshot_pantastic.PNG";
 import airrnr from "../images/screenshot_airrnr.PNG";
 import chess from "../images/screenshot_chess.PNG";
 
+const url = [pantastic, airrnr, chess];
+
 const Project = (props) => {
   return (
     <div className="projectCard">
@@ -13,13 +15,7 @@ const Project = (props) => {
           </div>
         </div>
         <div id="line-two">
-          {props.image === "2" ? (
-            <img src={pantastic} />
-          ) : props.image === "1" ? (
-            <img src={airrnr} />
-          ) : (
-            <img src={chess} />
-          )}
+          <img src={url[props.image]} />
         </div>
       </div>
       <div className="projectRight">
